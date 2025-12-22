@@ -9,15 +9,7 @@ public class Solution {
                   sumDel++;
                   break;
             }
-
         }
-        // int j=0;
-        // while(j!=sumStr-1&&strs[j][i]<=strs[j+1][i]) {
-        //     j++;
-        // }
-        // if(j!=sumStr-1) {
-        //     sumDel++;
-        // }
        }
        return sumDel;
     }
