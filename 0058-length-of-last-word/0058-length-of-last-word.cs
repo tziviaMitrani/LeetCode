@@ -2,8 +2,15 @@
 
 public class Solution {
     public int LengthOfLastWord(string s) {
-      string str= s.TrimEnd();
-      int ans=str.Length - str.LastIndexOf(" ")-1;
-      return ans; 
+        int len = 0;
+        int i = s.Length - 1;
+        while (i >= 0 && s[i] == ' ') {
+            i--;
+        }
+        while (i >= 0 && s[i] != ' ') {
+            i--;
+            len++;
+        }
+        return len;
    }
 }
